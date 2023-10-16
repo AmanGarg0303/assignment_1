@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.main_container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffcd9e;
+}
+
+.main_child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main_child > h4 {
+  font-size: 36px;
+}
+
+.main_child > p,
+.main_child > b {
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+}
+input {
+  width: 16vw;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  outline: none;
+}
+
+button {
+  width: 180px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-left: 6px;
+  background-color: #292928;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #161615;
+}
+
+.form_spam {
+  font-size: 14px !important;
+  font-weight: 500;
+  color: rgb(46, 37, 37);
+}
+
+footer {
+  background-color: #292928;
+  flex: 1;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  gap: 20vw;
+  font-size: 20px;
+}
+
+.left_footer > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
+  list-style: none;
+}
+
+.right_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  /* height: 100%; */
+  gap: 10px;
+}
+.right_footer > div > img {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main_container {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main_container > div > img {
+    height: 80vh;
+    width: 50vw;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  input {
+    width: 70%;
+  }
+  button {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .main_container {
+    flex-direction: column;
+  }
+  .main_child {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .form {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .main_container > div {
+    margin: auto;
+  }
+  .main_container > div > img {
+    height: 70vw;
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+  }
+  .right_footer {
+    align-items: center;
+  }
+}
